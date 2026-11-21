@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Twin Peeks — Spot the Difference</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #20242e;
+        overflow: hidden;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Trebuchet MS', 'Segoe UI', Verdana, sans-serif;
+      }
+      canvas {
+        display: block;
+        background: #f6f1e7;
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.45);
+      }
+      #status {
+        margin-top: 8px;
+        color: #aab3c8;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="game" width="1280" height="720"></canvas>
+    <div id="status">Twin Peeks — spot the difference</div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
